@@ -1,7 +1,16 @@
 
+/* 
+    CHARTE GRAPHIQUE
+    jaune = #f6c301
+    bleu =  #3b5ba6
+*/
+
+
 body {
     margin: 0;
 }
+
+/* PAGE DE GARDE */
 
 .logo-box {
     height: 100vh;
@@ -23,10 +32,54 @@ body {
     cursor: pointer;
 }
 
-
-
-
 @keyframes heart-pulse {
     0% {transform: scale(1, 1);}
     100% {transform: scale(1.08, 1.08);}
+}
+
+
+/* HOME */
+
+nav {
+    height: 50px;
+    position: sticky;
+    background-color: #f6c301;
+    border-bottom: solid 10px #3b5ba6;
+    margin-bottom: 50px;
+}
+
+.grid-container {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.grid-item {
+    height: 230px;
+    width: auto;
+    justify-self: center;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #b1b1b1;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.grid-item img {
+    height: 200px;
+}
+
+.grid-item p {
+    font-family: 'Spinnaker', sans-serif;
+    margin: 0;
+    text-align: center;
 }
