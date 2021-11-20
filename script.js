@@ -13,14 +13,19 @@ $(function() {
 });
 
 
+
 // Home
 
-// open modal
-$('#table tbody').on('click', 'tr', function () {
-  $('#modal').css("display", "block");
-});
+$(document).ready(function() {
 
-// close modal
-$('#modal div ').on('click', '.modal_close', function () {
-  $('#modal').css("display", "none");
-} );
+  // open modal
+  $('#grid_container').on('click', '.grid_item', function () {
+    $('#modal').css("display", "block");
+  });
+
+  // close modal
+  $('#modal').on('click', '.modal_close', function () {
+    $('#modal').css("display", "none");
+  } );
+
+});
