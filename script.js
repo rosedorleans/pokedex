@@ -1,4 +1,4 @@
-// Index 
+// Index //
 
 $(function() {
   $('#pokedex_logo').hover(function() {
@@ -14,12 +14,12 @@ $(function() {
 
 
 
-// Home
+// Home //
 
 $(document).ready(function() {
 
   // open modal
-  $('#grid_container').on('click', '.grid_item', function () {
+  $('.grid_container').on('click', '.grid_item', function () {
     $('#modal').css("display", "block");
   });
 

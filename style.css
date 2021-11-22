@@ -5,6 +5,9 @@
     bleu =  #3b5ba6
 */
 
+html {
+    font-family: 'Spinnaker', sans-serif;
+}
 
 body {
     margin: 0;
@@ -41,13 +44,51 @@ body {
 /* HOME */
 
 nav {
-    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
     position: sticky;
     background-color: #3b5ba6;
     margin-bottom: 50px;
 }
 
-#grid_container {
+nav .pokedex_logo_home {
+    display: flex;
+    align-items: center;
+}
+
+nav .pokedex_logo_home img {
+    height: 50px;
+}
+
+nav .search_box {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .search_box p {
+    color: #FFF;
+    font-size: 11px;
+    margin-right: auto;
+}
+
+nav .search_box .search {
+    display: flex;
+    gap: 10px;
+}
+
+nav .search_box .search input {
+    height: 15px;
+    align-self: center;
+    background: #365398;
+}
+
+nav .search_box .search a img {
+    height: 25px;
+    padding: 2px;
+}
+
+.grid_container {
     width: 60%;
     margin: 0 auto;
     display: grid;
@@ -78,7 +119,6 @@ nav {
 }
 
 .grid_item p {
-    font-family: 'Spinnaker', sans-serif;
     margin: 0;
     text-align: center;
 }
@@ -130,7 +170,6 @@ nav {
 }
 
 .modal_content .modal_header h2 {
-    font-family: 'Spinnaker', sans-serif;
     margin: 25px 10px 10px;
 }
   
@@ -149,19 +188,19 @@ nav {
     position: absolute;
     height: 290px;
     top: -60px;
-    left: -20px;
+    left: 0;
 }
 
 .modal_content .modal_text {
-    font-family: 'Spinnaker', sans-serif;
+
 }
 
 .modal_content .modal_text .text_1 {
-    padding: 20px 15px 20px 270px;
+    padding: 20px 30px 20px 290px;
     text-align: left;
 }
 
 .modal_content .modal_text .text_2 {
-    padding: 25px 20px 35px 30px;
+    padding: 25px 30px 35px;
     text-align: left;
 }
