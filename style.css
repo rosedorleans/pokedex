@@ -13,6 +13,10 @@ body {
     margin: 0;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 /* PAGE DE GARDE */
 
 .logo_box {
@@ -58,7 +62,7 @@ nav .pokedex_logo_home {
 }
 
 nav .pokedex_logo_home img {
-    height: 50px;
+    height: 70px;
 }
 
 nav .search_box {
@@ -86,6 +90,11 @@ nav .search_box .search input {
 nav .search_box .search a img {
     height: 25px;
     padding: 2px;
+    opacity: 0.85;
+}
+
+nav .search_box .search a img:hover {
+    opacity: 1;
 }
 
 .grid_container {
@@ -148,6 +157,11 @@ nav .search_box .search a img {
         transform: translateY(-10px);
     }
 }
+
+.modal_paginate {
+    position: flex;
+
+}
   
 .modal_content {
     position: relative;
@@ -162,22 +176,57 @@ nav .search_box .search a img {
 
 .modal_content .modal_header {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
+    padding-top: 20px;
 }
 
 .modal_content .modal_header .justify_box {
     width: 50px;
 }
 
+.modal_content .modal_header .modal_header_text {
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+}
+
 .modal_content .modal_header h2 {
-    margin: 25px 10px 10px;
+    margin: 0;
+}
+
+.modal_content .modal_header .pokemon_name span {
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.modal_content .modal_header .pokemon_name,
+.modal_content .modal_header .pokemon_type {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.modal_content .modal_header .pokemon_type span {
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+.modal_content .modal_header .pokemon_type #eau {
+    background-color: #4592c4;
+}
+
+.modal_content .modal_header .pokemon_type #eau:hover {
+    background-color: #3b7aa3;
 }
   
 .modal_content .modal_header .modal_close {
     float: right;
     height: 20px;
     width: 20px;
-    margin: 10px 15px;
+    margin: -6px 15px 10px 15px;
     background-image: url(../img/left-arrow.png);
     background-size: 100%;
     cursor: pointer;
@@ -192,7 +241,7 @@ nav .search_box .search a img {
 }
 
 .modal_content .modal_text {
-
+    cursor: default;
 }
 
 .modal_content .modal_text .text_1 {
