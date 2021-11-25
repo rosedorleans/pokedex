@@ -13,6 +13,14 @@ body {
     margin: 0;
 }
 
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
 body.modal-open {
     overflow: hidden;
 }
@@ -48,16 +56,13 @@ body.modal-open {
 /* HOME */
 
 nav {
-    display: flex;
     justify-content: space-around;
     height: 70px;
     position: sticky;
     background-color: #3b5ba6;
-    margin-bottom: 50px;
 }
 
 nav .pokedex_logo_home {
-    display: flex;
     align-items: center;
 }
 
@@ -65,41 +70,39 @@ nav .pokedex_logo_home img {
     height: 70px;
 }
 
-nav .search_box {
-    display: flex;
-    flex-direction: column;
+.filters {
+    justify-content: center;
+    margin: 30px 0;
 }
 
-nav .search_box p {
-    color: #FFF;
+.filters .search_box p {
+    color: #000;
     font-size: 11px;
     margin-right: auto;
 }
 
-nav .search_box .search {
-    display: flex;
+.filters .search_box .search {
     gap: 10px;
 }
 
-nav .search_box .search input {
+.filters .search_box .search input {
     height: 15px;
     align-self: center;
-    background: #365398;
 }
 
-nav .search_box .search a img {
+.filters .search_box .search a img {
     height: 25px;
     padding: 2px;
-    opacity: 0.85;
+    opacity: 0.6;
 }
 
-nav .search_box .search a img:hover {
+.filters .search_box .search a img:hover {
     opacity: 1;
 }
 
 .grid_container {
-    width: 60%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 0 auto 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 40px 20px;
@@ -160,7 +163,6 @@ nav .search_box .search a img:hover {
 
 .modal_paginate {
     position: relative;
-    display: flex;
     width: 57%;
     max-width: 90%;
     margin: 11% 0 0;
@@ -179,14 +181,8 @@ nav .search_box .search a img:hover {
 .modal_paginate .paginate_next img {
     height: 30px;
 }
-  
-.modal_content {
-    display: flex;
-    flex-direction: column;
-}
 
 .modal_content .modal_header {
-    display: flex;
     justify-content: right;
     padding-top: 20px;
 }
@@ -197,7 +193,6 @@ nav .search_box .search a img:hover {
 
 .modal_content .modal_header .modal_header_text {
     width: 58%;
-    display: flex;
     justify-content: space-between;
     cursor: default;
 }
@@ -213,7 +208,6 @@ nav .search_box .search a img:hover {
 
 .modal_content .modal_header .pokemon_name,
 .modal_content .modal_header .pokemon_type {
-    display: flex;
     gap: 10px;
     align-items: center;
 }

@@ -13,20 +13,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="pokedex_logo_home">
-            <img src="img/pokedex_logo.png" alt="pokedex logo">
+    <nav class="flex">
+        <div class="pokedex_logo_home flex">
+            <a href="home.html">
+                <img src="img/pokedex_logo.png" alt="pokedex logo">
+            </a>
         </div>
-        <div class="search_box">
+    </nav>
+    <div class="filters flex">
+        <div class="search_box flex column">
             <p>Rechercher par nom ou numéro :</p>
-            <div class="search">
+            <div class="search flex">
                 <input type="text">
                 <a href="#">
-                    <img src="img/search.png" alt="rechercher">
+                    <img src="img/search-black.png" alt="rechercher">
                 </a>
             </div>
         </div>
-    </nav>
+    </div>
     <div class="grid_container">
         <div class="grid_item">
             <img src="img/pokemons/007.png" alt="carapuce">
@@ -81,18 +85,18 @@
 
 
     <div id="modal" class="modal">
-        <div class="modal_paginate">
+        <div class="modal_paginate flex">
             <div class="paginate_previous">
                 <img src="img/left-arrow.png" alt="pagination gauche">
             </div>
-            <div class="modal_content">
-                <div class="modal_header">
-                    <div class="modal_header_text">
-                        <div class="pokemon_name">
+            <div class="modal_content flex column">
+                <div class="modal_header flex">
+                    <div class="modal_header_text flex">
+                        <div class="pokemon_name flex">
                             <h2> Carapuce</h2>
                             <span>n°007</span>
                         </div>
-                        <div class="pokemon_type">
+                        <div class="pokemon_type flex">
                             <span id="eau">Eau</span>
                         </div>
                         <div class="modal_close"></div>
